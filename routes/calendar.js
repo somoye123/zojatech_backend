@@ -1,5 +1,5 @@
 import express from 'express';
-import { getEvents } from '../controllers/calendar';
+import { getEvents } from '../controllers/calendar.js';
 
 const router = express.Router();
 
