@@ -1,0 +1,61 @@
+{
+  "name": "google_calendar_api",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "Nodejs Applications",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint . --fix",
+    "start": "node index.js",
+    "dev": "nodemon -r dotenv/config  --experimental-modules --es-module-specifier-resolution=node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Keyla-Technologies/Starter-Templates.git"
+  },
+  "keywords": [
+    "nodejs",
+    "express",
+    "sequelize",
+    "rest",
+    "api",
+    "postgresql",
+    "bcrypt"
+  ],
+  "bugs": {
+    "url": "https://github.com/Keyla-Technologies/Starter-Templates/issues"
+  },
+  "homepage": "https://github.com/Keyla-Technologies/Starter-Templates#readme",
+  "author": "Somoye Ayotunde <somoye.ayotunde@gmail.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "dotenv": "^8.6.0",
+    "eslint": "^7.23.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.22.1",
+    "nodemon": "^2.0.7"
+  },
+  "nodemonConfig": {
+    "restartable": "yes",
+    "ignore": [
+      "node_modules/**/node_modules"
+    ],
+    "delay": "1500",
+    "env": {
+      "NODE_ENV": "development",
+      "PORT": 4000
+    }
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "googleapis": "^82.0.0",
+    "jsonwebtoken": "^8.5.1",
+    "pg": "^8.5.1",
+    "pg-hstore": "^2.3.3",
+    "sequelize": "^6.6.2",
+    "v-response": "^1.1.0"
+  }
+}
